@@ -1,15 +1,12 @@
 package com.example.documentmicroservice.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/")
-public class DocumentController {
+@RequestMapping
+@RequiredArgsConstructor
+public class HistoryController {
 
-    @GetMapping
-    public String hi(){
-        return "HI";
-    }
 }
